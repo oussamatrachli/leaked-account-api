@@ -15,8 +15,8 @@ namespace leaked_account_api.Models
         public string Email { get; set; }
         [BsonElement("passwords")]
         public List<string> Passwords { get; set; }
-        [BsonElement("integration")]
+        [BsonElement("integrationTime")]
         [BsonDateTimeOptions(Representation = BsonType.DateTime)]
-        public DateTime Integration { get; set; }
+        public DateTime integrationTime { get; set; }
     }
 }
